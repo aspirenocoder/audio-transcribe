@@ -1,0 +1,42 @@
+/* TranscriptionComponent.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    background-color: #f0f8ff; /* Lightly colorful background */
+    font-family: Arial, sans-serif;
+}
+
+button {
+    background-color: #4caf50; /* Green background */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:disabled {
+    background-color: #d3d3d3; /* Light gray for disabled button */
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background-color: #45a049;
+}
+
+audio {
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    max-width: 500px; /* Optional: set a max-width for the audio player */
+}
+
+.hidden-file-input {
+    display: none;
+}
